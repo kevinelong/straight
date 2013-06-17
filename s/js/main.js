@@ -28,6 +28,17 @@ $().ready(function(){
             easing: "swing"
         }
     );
+    $(document).on("click", ".addRow", function(event){
+        event.preventDefault();
+        var original=$(this).closest("tr");
+        var newRow=original.clone();
+        original.after(newRow);
+        original.removeClass("active");
+        var inning=original.find(".inning").html();
+        inning=parseInt(inning);
+        inning++;
+        newRow.find(".inning").html(inning);
+    });
 
 });
 

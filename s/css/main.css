@@ -6,7 +6,6 @@ body {
 body, button, input {
     font-family: consolas;
     font-size: 1.5em
-
 }
 
 label {
@@ -16,7 +15,34 @@ label {
 a {
     color: black;
 }
+td input, li input{
+    width: 100px;
+}
+table{
+    border-collapse:collapse;
+}
+td{
+    padding: 12px 24px;
+    border: 1px solid #aaaaaa;
+}
+.addRow{
+    Width:100px;
+    border:solid black;
+    display:none;
+}
+tr.active td .addRow{
+    display:block;
+}
+.buttons{
+    border:none;
+}
+.titles li, .innings li{
+    display: inline-block;
+}
 
+.scoreSheet li ul li{
+    width: 120px;
+}
 #heading {
     color: whitesmoke;
     position: fixed;
@@ -38,5 +64,5 @@ a {
     background-color: #d3d3d3;
     font-size: .75em;
     margin: 100px auto 0 auto;
-    width: 50%;
+    width: 95%;
 }

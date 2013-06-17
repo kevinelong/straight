@@ -14,9 +14,9 @@
         <div class="box" id="box1">
             <label> P1: </label>
             <input id="player1" value="" placeholder="player 1's name">
-            <ul>
+            <ul class="scoreSheet">
                 <li>
-                    <ul>
+                    <ul class="titles">
                         <li>
                             Inning
                         </li>
@@ -32,7 +32,7 @@
                     </ul>
                 </li>
                 <li>
-                    <ul>
+                    <ul class="innings">
                         <li>
                             <span class="inning">1</span>
                         </li>
@@ -54,20 +54,20 @@
             <input id="player2" value="" placeholder="player 2's name">
             <table>
                 <tr>
-                    <th>
+                    <td>
                         Inning
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Points
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Fouls
-                    </th>
-                    <th>
+                    </td>
+                    <td>
                         Total
-                    </th>
+                    </td>
                 </tr>
-                <tr>
+                <tr class="active">
                     <td>
                         <span class="inning">1</span>
                     </td>
@@ -80,6 +80,11 @@
                     <td>
                         <span class="total">5</span>
                     </td>
+                    <td class="buttons">
+                        <button class="addRow">
+                            Add Row
+                        </button>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -89,10 +94,10 @@
 
 </body>
 <!-- BEGIN COMMENT
-    Moved the Javascript into its own file: straight.js
+    Moved the Javascript into its own file: main.js
     Note the src property on the script tag.
     FYI traditionally these are generally loaded in the head tag,
     but for performance reasons most people today place them at the end of the body.
 END COMMENT -->
-<script src="s/js/straight.js" type="text/javascript"></script>
+<script src="s/js/main.js" type="text/javascript"></script>
 </html>
