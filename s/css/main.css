@@ -1,0 +1,42 @@
+body {
+    background-color: slategrey;
+    margin: 0;
+}
+
+body, button, input {
+    font-family: consolas;
+    font-size: 1.5em
+
+}
+
+label {
+    font-size: 1.5em;
+}
+
+a {
+    color: black;
+}
+
+#heading {
+    color: whitesmoke;
+    position: fixed;
+    right: -300px;
+    top: 12px;
+    margin:0; padding: 0;
+}
+
+.box {
+    margin: 12px;
+    background-color: #d3d3d3;
+    font-size: .75em;
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#players {
+    background-color: #d3d3d3;
+    font-size: .75em;
+    margin: 100px auto 0 auto;
+    width: 50%;
+}

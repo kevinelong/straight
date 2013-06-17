@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>straight pool score sheet</title>
+    <script src="s/js/lib/jquery.js"></script>
+    <link rel='stylesheet' href='s/css/main.css' type='text/css' media='all'/>
+</head>
+<body>
+
+<h1 id="heading">Straight Pool</h1>
+
+<div id="players">
+    <form>
+        <div class="box" id="box1">
+            <label> P1: </label>
+            <input id="player1" value="" placeholder="player 1's name">
+            <ul>
+                <li>
+                    <ul>
+                        <li>
+                            Inning
+                        </li>
+                        <li>
+                            Points
+                        </li>
+                        <li>
+                            Fouls
+                        </li>
+                        <li>
+                            Total
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <span class="inning">1</span>
+                        </li>
+                        <li>
+                            <input class="points" value="8">
+                        </li>
+                        <li>
+                            <input class="fouls" value="2">
+                        </li>
+                        <li>
+                            <span class="total">6</span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="box" id="box2">
+            <label> P2: </label>
+            <input id="player2" value="" placeholder="player 2's name">
+            <table>
+                <tr>
+                    <th>
+                        Inning
+                    </th>
+                    <th>
+                        Points
+                    </th>
+                    <th>
+                        Fouls
+                    </th>
+                    <th>
+                        Total
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="inning">1</span>
+                    </td>
+                    <td>
+                        <input class="points" value="4">
+                    </td>
+                    <td>
+                        <input class="foul" value="0">
+                    </td>
+                    <td>
+                        <span class="total">5</span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+
+
+</body>
+<!-- BEGIN COMMENT
+    Moved the Javascript into its own file: straight.js
+    Note the src property on the script tag.
+    FYI traditionally these are generally loaded in the head tag,
+    but for performance reasons most people today place them at the end of the body.
+END COMMENT -->
+<script src="s/js/straight.js" type="text/javascript"></script>
+</html>
