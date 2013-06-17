@@ -29,15 +29,28 @@ $().ready(function(){
         }
     );
     $(document).on("click", ".addRow", function(event){
+
         event.preventDefault();
+
         var original=$(this).closest("tr");
+
         var newRow=original.clone();
+
         original.after(newRow);
         original.removeClass("active");
+
         var inning=original.find(".inning").html();
         inning=parseInt(inning);
         inning++;
         newRow.find(".inning").html(inning);
+
+        /*********************
+         *  clear old values
+         *********************/
+        newRow.find(".total").html(""); // its a span so use .html()
+        newRow.find(".points").val(""); // its an input so use .val()
+        newRow.find(".fouls").val("");  // its an input so use .val()
+
     });
 
 });
